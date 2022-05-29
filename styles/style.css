@@ -1,4 +1,8 @@
+/* HOME PAGE STYLING STARTS */
 
+body{
+    background-color: #F6F5F7;
+}
 
 /* HOME SECTION */
 .home-div{
@@ -103,7 +107,7 @@
     padding: 8px;
     border-radius: 50px;
     transition: all 0.3s ease-in-out; 
-    margin-top: 10px;
+    margin: 20px 0;
 }
 .product-section .btn:hover{
     background-color: #051922;
@@ -514,5 +518,83 @@
       display: flex;
       flex-direction: column;
      
+    }
+}
+/* HOME PAGE STYLING ENDS */
+
+
+/* PAYMENT PAGE STYLING STARTS */
+
+.payment-section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.payment-section .wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+.payment-section .address-div{
+    gap: 50px;
+}
+.payment-section .address-div button{
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    border: 2px #F1EFF1 solid !important;
+    font-weight: bold;
+}
+.payment-section .address-div button i{
+    border-radius: 50% !important;
+    color: #0B00FF;
+    margin: 0 5px;
+}
+.payment-section .address-div .collapse .card-body{
+    background-color: #fff;
+}
+.payment-section .address-div .collapse #card-body{
+    padding: 30px;
+}
+.payment-section .address-div input{
+    height: 50px !important;
+}
+.payment-section .address-div textarea{
+    width: 100%;
+}
+
+.payment-section table{
+    width: 80% !important;  
+}
+.payment-section table thead{
+    background-color: #F1EFF1;
+}
+.payment-section table tr{
+    color: #6D46D2;
+}
+
+.payment-section .order-details-div button{
+    background-color: #0000FF;
+    color: #fff;
+    width: 130px;
+    padding: 8px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    border: 0.5px #0000FF;
+}
+
+.payment-section .order-details-div button:hover{
+    background-color: #051922;
+    color: #F28123;
+}
+
+
+
+
+
+@media screen and (max-width: 714px){
+
+    .payment-section .wrapper{
+        display: flex;
+        flex-direction: column;
     }
 }
