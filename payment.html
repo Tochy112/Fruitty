@@ -166,7 +166,9 @@
                     <button type="submit" style="margin-bottom: 10px;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseExample"> <i class="fa-solid fa-square-check"></i> Shipping Address</button>
                     <div class="collapse" id="collapseTwo">
                         <div class="card-body">
-                          <p>Your shipping address form is here</p>
+                            <div class="form-group">
+                                <input type="text" class="form-control"  placeholder="Shipping address">
+                            </div>                        
                         </div>
                     </div>
                     <br>
@@ -174,7 +176,38 @@
                     <button type="submit" style="margin-bottom: 10px;" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseExample"> <i class="fa-solid fa-square-check"></i> Cards Details</button>
                     <div class="collapse" id="collapseThree">
                         <div class="card-body">
-                            <p>Your Card details goes in here</p>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="name">Name on card</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Name">
+                                </div> 
+
+                                   
+                                <div class="form-group">
+                                    <label for="cardNum">Card number</label>
+                                    <input type="number" min="0" class="form-control" id="cardNum" placeholder="card number">
+                                </div>
+                                    
+                                
+
+                                <div id="cardVal-div" class="d-flex justify-content-between">
+                                    <div class="form-group mr-3">
+                                        <label for="cardVal">Valid through (MM-YY)</label>
+                                        <input type="number" min="0" class="form-control" id="cardVal" placeholder="MM-YY">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="cvv">CVV (3 Digits)</label>
+                                        <input type="number" min="0" class="form-control" id="cvv" placeholder="...">
+                                    </div>
+                                </div>
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="config">
+                                    <label class="custom-control-label" for="config">Allow to securely save my card details</label>
+                                </div>
+                            </form>
+
                         </div>
                     </div>
                     
